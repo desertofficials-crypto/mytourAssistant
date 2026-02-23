@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background:#f4f4f4; color:#333; }
+    header { background:#2c3e50; color:white; padding:20px; display:flex; justify-content:space-between; align-items:center; }
+    header nav a { color:white; margin-left:20px; text-decoration:none; font-weight:bold; }
+    .hero { background:url('https://source.unsplash.com/1600x600/?travel') no-repeat center/cover; height:400px; display:flex; justify-content:center; align-items:center; color:white; text-shadow:1px 1px 5px black; flex-direction:column; }
+    .hero h1 { font-size:48px; margin-bottom:20px; }
+    .hero input[type=text] { padding:10px; width:300px; border:none; border-radius:5px; margin-bottom:10px; }
+    .hero button { padding:10px 20px; border:none; background:#e67e22; color:white; border-radius:5px; cursor:pointer; }
+    .section { padding:50px 20px; max-width:1200px; margin:auto; }
+    .section h2 { text-align:center; margin-bottom:30px; }
+    .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .card { background:white; width:300px; border-radius:10px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+    .card img { width:100%; height:200px; object-fit:cover; }
+    .card-content { padding:15px; }
+    .card-content h3 { margin-bottom:10px; }
+    .card-content p { margin-bottom:10px; color:#e67e22; font-weight:bold; }
+    .card-content button { padding:10px; width:100%; border:none; background:#3498db; color:white; border-radius:5px; cursor:pointer; }
+    footer { background:#2c3e50; color:white; text-align:center; padding:20px; margin-top:50px; }
+    @media(max-width:768px) { .cards { flex-direction:column; align-items:center; } .hero h1 { font-size:32px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Travel Explorer</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tours</a>
+    <a href="#">Transport</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Discover Your Next Adventure</h1>
+  <input type="text" placeholder="Search destinations">
+  <button>Search</button>
+</section>
+
+<section class="section">
+  <h2>Featured Tours</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?beach" alt="">
+      <div class="card-content">
+        <h3>Cox's Bazar Beach</h3>
+        <p>$120</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?mountain" alt="">
+      <div class="card-content">
+        <h3>Sylhet Hills</h3>
+        <p>$150</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?city" alt="">
+      <div class="card-content">
+        <h3>Dhaka City Tour</h3>
+        <p>$80</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Travel Explorer | All Rights Reserved
+</footer>
+
+</body>
+</html>
